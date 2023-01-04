@@ -1,0 +1,176 @@
+<!-- !!! REGISTRO DE DEVS !!!!! -->
+<body>
+  <div class="devs-register">
+    <img class="form-imgd" src="https://w0.peakpx.com/wallpaper/717/172/HD-wallpaper-hacker-green-iphone5-iphone6.jpg" alt="">
+<div class="d-flex justify-content-center mt-4">
+  <div
+    class="users-form d-flex justify-content-center "
+  >
+  <div class="formulary-devs "
+  >
+    <h3 class="text-center pb-3">Registro de DEVS</h3>
+
+    <form #devsForm="ngForm">
+      <input
+        type="hidden"
+        id="_id"
+        name="_id"
+        [ngModel]="this.devsService.currentDev._id"
+      />
+      <div class="mb-1">
+        <label for="name" class="form-label">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firtsName"
+          placeholder="Nombre"
+          name="firtsName"
+          style="width: 100%; height: 50%"
+          [ngModel]="this.devsService.currentDev.firtsName"
+        />
+        <div class="mb-1">
+          <label for="description" class="form-label">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            placeholder="Apellido"
+            name="lastName"
+            [ngModel]="this.devsService.currentDev.lastName"
+            style="width: 100%; height: 50%"
+          />
+        </div>
+      </div>
+      <div class="mb-1">
+        <label for="idType" class="form-label">Identificacion</label>
+        <input
+          type="number"
+          class="form-control"
+          id="cc"
+          placeholder="Numero de Identificacion"
+          name="cc"
+          [ngModel]="this.devsService.currentDev.cc"
+          style="width: 100%; height: 50%"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="idType" class="form-label">Edad</label>
+        <input
+          type="number"
+          class="form-control"
+          id="age"
+          placeholder="Edad"
+          name="age"
+          [ngModel]="this.devsService.currentDev.age"
+          style="width: 100%; height: 50%"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="idType" class="form-label">Numero de telefono</label>
+        <input
+          type="number"
+          class="form-control"
+          id="numberPhone"
+          placeholder="Numero de Telefono"
+          name="numberPhone"
+          [ngModel]="this.devsService.currentDev.numberPhone"
+          style="width: 100%; height: 50%"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="description" class="form-label">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          id="email"
+          placeholder="email"
+          name="email"
+          [ngModel]="this.devsService.currentDev.email"
+          style="width: 100%; height: 50%"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="password" class="form-label">Contraseña</label>
+        <input
+          type="string"
+          class="form-control"
+          id="password"
+          placeholder="Contraseña"
+          name="password"
+          [ngModel]="this.devsService.currentDev.password"
+          style="width: 100%; height: 50%"
+        />
+      </div>
+      <label for="devType" class="form-label">Tipo de desarrollador</label>
+      <select
+        id="devType"
+        placeholder="Tipo de desarrollador"
+        name="devType"
+        [ngModel]="this.devsService.currentDev.devType"
+        class="form-select"
+        aria-label="Seleccione su tipo de desarrollador"
+      >
+        <option value="Back">Back</option>
+        <option value="Front">Front</option>
+        <option value="Asesor">Asesor</option>
+      </select>
+      <div class="mb-1">
+        <label for="password" class="form-label">Tecnologias que usa</label>
+        <input
+          type="string"
+          class="form-control"
+          id="tecno"
+          placeholder="Tecnologias que domina"
+          name="tecno"
+          [ngModel]="this.devsService.currentDev.tecno"
+          style="width: 100%; height: 7rem"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="password" class="form-label">Proyectos realizados</label>
+        <input
+          type="string"
+          class="form-control"
+          id="proyects"
+          placeholder="Inserte links de algunos de sus proyectos"
+          name="proyects"
+          [ngModel]="this.devsService.currentDev.proyects"
+          style="width: 100%; height: 7rem"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="password" class="form-label">Experiencia</label>
+        <input
+          type="string"
+          class="form-control"
+          id="exprecience"
+          placeholder="Comentenos algo acerca de su experiencia, puede adjuntar links con sus paginas personales"
+          name="experience"
+          [ngModel]="this.devsService.currentDev.experience"
+          style="width: 100%; height: 7rem"
+        />
+      </div>
+      <div class="mb-1">
+        <label for="password" class="form-label">Foto</label>
+        <input
+          type="string"
+          class="form-control"
+          id="image"
+          placeholder="Inserte el link de su imagen"
+          name="image"
+          [ngModel]="this.devsService.currentDev.image"
+          style="width: 100%; height: 50%"
+        />
+      </div>
+    </form>
+    <button class="btn btn-dark" (click)="this.createDevs(devsForm)">
+      Guardar
+    </button>
+  </div>
+  </div>
+</div>
+</div>
+
+</body>
+
+<!-- !!! END REGISTRO DE USUARIOS !!!!! -->

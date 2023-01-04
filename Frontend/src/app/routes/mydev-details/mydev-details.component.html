@@ -1,0 +1,223 @@
+<body class="body-ud2">
+<div>
+  <div class="details-header">
+  <div class="img-details-container">
+  <img class="img-details"
+    src="{{ this.devService.devs.data.image }}"
+    alt="..."
+    
+  />
+  <h2 class="details-name">
+    {{ this.devService.devs.data.firtsName }}
+    {{ this.devService.devs.data.lastName }}
+    
+  </h2>
+  <h4 class="details-id me-4"> ID: {{this.devService.devs.data._id}}</h4>
+  <h4 class="details-devtype">{{this.devService.devs.data.devType}} Developer</h4>
+  <h6 class="details-cc">Numero de Documento: {{this.devService.devs.data.cc}}</h6>
+  <h6 class="details-age">Edad: {{this.devService.devs.data.age}} </h6>
+</div>
+<div class="details-titles d-flex flex-column mt-4">
+  <div class="details-body">
+    <div class="details-contact">
+      <h3 class="contact-tittle">Informacion Personal</h3>
+    <h6 class="details-email">Email: {{this.devService.devs.data.email}}</h6>
+    <h6 class="details-password">Contraseña: ******** </h6>
+    <h6 class="details-numberphone">Numero de telefono: {{this.devService.devs.data.numberPhone}}</h6>
+    <h6 class="details-tecno">Conocimientos y aptitudes: {{this.devService.devs.data.tecno}}</h6>
+    <h6 class="details-proyects">Proyectos personales: {{this.devService.devs.data.proyects}}</h6>
+    <h6 class="details-experience">Experiencia personal: {{this.devService.devs.data.experience}}</h6>
+    </div>
+  </div>
+  <div class="btn-details-container">
+  <button
+  class=" btn-details btn btn-dark btn-block"
+  (click)="this.devvalidator.formulary()"
+  (click)="this.fillForm(this.devService.devs.data)"
+>
+ Editar Perfil
+</button>
+</div>
+</div>
+
+</div  >
+<div class="details-footer">
+ 
+
+  <div
+    *ngIf="this.devvalidator.formularyValidator()"
+    style="color: white"
+    class="d-flex justify-content-evenly"
+  >
+    <div class="border p-3 rounded" style="width: 30rem">
+      <h3 class="text-center pb-3">Editar Usuario</h3>
+
+      <form #devsForm="ngForm">
+        <input
+          type="hidden"
+          id="_id"
+          name="_id"
+          [ngModel]="this.devService.currentDev._id"
+        />
+        <div class="mb-1">
+          <label for="name" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firtsName"
+            placeholder="Nombre"
+            name="firtsName"
+            style="width: 100%; height: 50%"
+            [ngModel]="this.devService.currentDev.firtsName"
+          />
+          <div class="mb-1">
+            <label for="description" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Apellido"
+              name="lastName"
+              [ngModel]="this.devService.currentDev.lastName"
+              style="width: 100%; height: 50%"
+            />
+          </div>
+        </div>
+        <div class="mb-1">
+          <label for="idType" class="form-label">Identificacion</label>
+          <input
+            type="number"
+            class="form-control"
+            id="cc"
+            placeholder="Numero de Identificacion"
+            name="cc"
+            [ngModel]="this.devService.currentDev.cc"
+            style="width: 100%; height: 50%"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="idType" class="form-label">Edad</label>
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            placeholder="Edad"
+            name="age"
+            [ngModel]="this.devService.currentDev.age"
+            style="width: 100%; height: 50%"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="idType" class="form-label">Numero de telefono</label>
+          <input
+            type="number"
+            class="form-control"
+            id="numberPhone"
+            placeholder="Numero de Telefono"
+            name="numberPhone"
+            [ngModel]="this.devService.currentDev.numberPhone"
+            style="width: 100%; height: 50%"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="description" class="form-label">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="email"
+            name="email"
+            [ngModel]="this.devService.currentDev.email"
+            style="width: 100%; height: 50%"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="password" class="form-label">Contraseña</label>
+          <input
+            type="string"
+            class="form-control"
+            id="password"
+            placeholder="Contraseña"
+            name="password"
+            [ngModel]="this.devService.currentDev.password"
+            style="width: 100%; height: 50%"
+          />
+        </div>
+        <label for="devType" class="form-label">Tipo de desarrollador</label>
+        <select
+          id="devType"
+          placeholder="Tipo de desarrollador"
+          name="devType"
+          [ngModel]="this.devService.currentDev.devType"
+          class="form-select"
+          aria-label="Seleccione su tipo de desarrollador"
+          
+        >
+          <option value="Back">Back</option>
+          <option value="Front">Front</option>
+          <option value="Asesor">Asesor</option>
+        </select>
+        <div class="mb-1">
+          <label for="password" class="form-label">Tecnologias que usa</label>
+          <input
+            type="string"
+            class="form-control"
+            id="tecno"
+            placeholder="Tecnologias que domina"
+            name="tecno"
+            [ngModel]="this.devService.currentDev.tecno"
+            style="width: 100%; height: 10rem"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="password" class="form-label">Proyectos realizados</label>
+          <input
+            type="string"
+            class="form-control"
+            id="proyects"
+            placeholder="Inserte links de algunos de sus proyectos"
+            name="proyects"
+            [ngModel]="this.devService.currentDev.proyects"
+            style="width: 100%; height: 10rem"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="password" class="form-label">Experiencia</label>
+          <input
+            type="string"
+            class="form-control"
+            id="exprecience"
+            placeholder="Comentenos algo acerca de su experiencia, puede adjuntar links con sus paginas personales"
+            name="experience"
+            [ngModel]="this.devService.currentDev.experience"
+            style="width: 100%; height: 10rem"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="password" class="form-label">Foto</label>
+          <input
+            type="string"
+            class="form-control"
+            id="image"
+            placeholder="Inserte el link de su imagen"
+            name="experience"
+            [ngModel]="this.devService.currentDev.image"
+            style="width: 100%; height: 50%"
+          />
+        </div>
+      </form>
+      <button
+        class="btn btn-dark"
+        (click)="this.createDev(devsForm)"
+        (click)="this.devvalidator.closeFormulary()"
+      >
+        Guardar
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="footer-img">
+  <img class="img-fo" src="assets/images/softlution_1.png" alt="">
+</div>
+</body>

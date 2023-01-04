@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-center align-items-center flex-column">
+  <div
+    style="width: 100%"
+    class="d-flex justify-content-end align-items-center"
+  >
+    <div class="dropdown m-4">
+      <a
+        class="btn btn-secondary dropdown-toggle"
+        href="#"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Filtrar por tipo de Dev
+      </a>
+
+      <ul class="dropdown-menu">
+        <li>
+          <a
+            class="dropdown-item"
+            style="cursor: pointer"
+            (click)="this.getDevsByBackDev()"
+            >Back Developer</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            style="cursor: pointer"
+            (click)="this.getDevsByFrontDev()"
+            >Front Developer</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            style="cursor: pointer"
+            (click)="this.getDevsByAsesorDev()"
+            >Asesor Developer</a
+          >
+        </li>
+      </ul>
+    </div>
+    <button class="btn btn-danger me-4" (click)="this.getDevs()">Quitar Filtros</button>
+  </div>
+  <div
+    class="container mt-5 d-flex flex-wrap align-items-center"
+    style="width: 85%"
+  >
+    <app-devcard
+      *ngFor="let devs of this.devsService.devs"
+      image="{{ devs.image }}"
+      Nombre="{{ devs.firtsName }}"
+      Apellido="{{ devs.lastName }}"
+      devType="{{ devs.devType }}"
+      experience="{{ devs.experience }}"
+      tecno="{{ devs.tecno }}"
+      btnText="Mas Informacion"
+      devId="{{ devs._id }}"
+    ></app-devcard>
+  </div>
+</div>

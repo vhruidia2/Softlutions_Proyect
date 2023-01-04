@@ -1,0 +1,164 @@
+<!-- !!! REGISTRO DE USUARIOS !!!!! -->
+<body>
+  
+
+<div class="users-register">
+  <img class="form-img" src="https://w0.peakpx.com/wallpaper/731/174/HD-wallpaper-flatdesign-purple-background-portrait-display.jpg" alt="">
+<div class="users-form-container d-flex justify-content-center">
+    <div
+      class="users-form d-flex justify-content-center  "
+    >
+      <div class="formulary-users  p-3 rounded" 
+       
+       >
+        <h3 class="text-center pb-3">Registro de Usuarios</h3>
+  
+        <form #usersForm="ngForm">
+          <input
+            type="hidden"
+            id="_id"
+            name="_id"
+            [ngModel]="this.usersService.currentUser._id"
+            
+  
+          />
+          <div class="mb-1">
+            <label for="name" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firtsName"
+              placeholder="Nombre"
+              name="firtsName"
+             
+              [ngModel]="this.usersService.currentUser.firtsName"
+            />
+            <div class="mb-1">
+              <label for="description" class="form-label">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Apellido"
+                name="lastName"
+                [ngModel]="this.usersService.currentUser.lastName"
+                style="width: 100% ;
+            height: 50%;"
+              />
+            </div>
+          </div>
+          <div class="mb-1">
+              <label for="idType" class="form-label">Identificacion</label>
+              <input
+                type="number"
+                class="form-control"
+                id="cc"
+                placeholder="Numero de Identificacion"
+                name="cc"
+                [ngModel]="this.usersService.currentUser.cc"
+                style="width: 100% ;
+              height: 50%;"
+              />
+            </div>
+            <div class="mb-1">
+              <label for="idType" class="form-label">Edad</label>
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                placeholder="Edad"
+                name="age"
+                [ngModel]="this.usersService.currentUser.age"
+                style="width: 100% ;
+              height: 50%;"
+              />
+            </div>
+            <div class="mb-1">
+              <label for="idType" class="form-label">Numero de telefono</label>
+              <input
+                type="number"
+                class="form-control"
+                id="numberPhone"
+                placeholder="Numero de Telefono"
+                name="numberPhone"
+                [ngModel]="this.usersService.currentUser.numberPhone"
+                style="width: 100% ;
+              height: 50%;"
+              />
+            </div>
+          <div class="mb-1">
+            <label for="description" class="form-label">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="email"
+              name="email"
+              [ngModel]="this.usersService.currentUser.email"
+              style="width: 100% ;
+            height: 50%;"
+            />
+          </div>
+          <div class="mb-1">
+            <label for="stock" class="form-label">Contraseña</label>
+            <input
+              type="string"
+              class="form-control"
+              id="password"
+              placeholder="Contraseña"
+              name="password"
+              [ngModel]="this.usersService.currentUser.password"
+              style="width: 100% ;
+            height: 50%;"
+            />
+          </div>
+          <div class="mb-1">
+            <label for="description" class="form-label">Necesidades</label>
+            <input
+              type="text"
+              class="form-control"
+              id="description"
+              placeholder="Que necesita de un dev?"
+              name="description"
+              [ngModel]="this.usersService.currentUser.description"
+              style="width: 100% ;
+          height: 2rem;"
+            />
+          </div>
+          <label for="range" class="form-label">Disposicion para remunerar</label>
+          <select
+            
+            id="range"
+            placeholder="Rango dispuesto a remunerar"
+            name="range"
+            [ngModel]="this.usersService.currentUser.range"
+            class="form-select"
+            aria-label="Seleccione el rango por el que esta dispuesto a pagar a un dev"
+          >
+            <option value="-100$">-100$</option>
+            <option value="100$ - 500$">100$ - 500$</option>
+            <option value="500$  - 1.000$">500$ - 1.000$</option>
+            <option value="+1.000">+1.000$</option>
+          </select>
+          <div class="mb-1">
+            <label for="image" class="form-label">Foto</label>
+            <input
+              type="string"
+              class="form-control"
+              id="image"
+              placeholder="Inserte el link de su imagen"
+              name="image"
+              [ngModel]="this.usersService.currentUser.image"
+              style="width: 100%; height: 50%"
+            />
+          </div>
+          
+        </form>
+        <button class="btn btn-dark" (click)="this.createUsers(usersForm)">
+          Guardar
+        </button>
+      </div>
+    </div>
+  </div>
+
+    <!-- !!! END REGISTRO DE USUARIOS !!!!! -->

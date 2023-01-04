@@ -1,0 +1,133 @@
+<div>
+  <app-carrousel-banner
+    img1="assets/images/1.jpg"
+    img2="assets/images/2v.png"
+    img3="assets/images/3.png"
+  ></app-carrousel-banner>
+</div>
+<!-- Que ofrecemos Section -->
+<section class="que-ofrecemos pt-3" id="servicios">
+  <div class="text d-flex flex-column align-items-center">
+    <h3 class="ofrecemos-tittle">Que Ofrecemos!?</h3>
+    <p class="ofrecemos-text ps-4 pe-4">
+      Desarrollamos de manera efectiva software para el crecimiento de sus metas
+      profesionales, ofreciendo los más altos estándares de calidad.
+    </p>
+  </div>
+  <div class="cardcontainer d-flex justify-content-around pb-4">
+    <app-card
+      cardText="Desarrollo Front-End de la mayor calidad, con un alto potencial
+        de impactar en el mercado al que este direccionado tu negocio a
+        fin de que cumplas todas tus metas, además una metodología que
+        nos permite llegar al 100% de tus expectativas."
+      buttonText="Devs-Front"
+      imgCard="assets/images/card1.jpg"
+      [routerLink]="['/devs-front']"
+    ></app-card>
+    <app-card
+      cardText="Haz realidad ese proyecto que tienes en mente creando esa app
+        que siempre ha soñado, involucrando las mejores y más recientes
+        tecnologías, que le permitirán introducir su emprendimiento al
+        mundo digital,  con los mejores profesionales "
+      buttonText="Devs-Back"
+      imgCard="assets/images/card2.jpg"
+      [routerLink]="['/devs-back']"
+    ></app-card>
+    <app-card
+      cardText="Con nuestro equipo de expertos podrá tener acceso a asesorías
+        virtuales personalizadas 24 horas para solucionar esos molestos
+        bugs que no lo dejan avanzar en sus proyectos, o que interfieren
+        en el desarrollo de sus aplicativos web, de escritorio o mov."
+      buttonText="Asesorias"
+      imgCard="assets/images/card3.jpg"
+      [routerLink]="['/asesorias']"
+    ></app-card>
+  </div>
+  <!-- End Cards -->
+</section>
+<!-- End Que Ofrecemos Section -->
+<!--Quienes somos Section  -->
+<div class="Container d-flex flex-column py-5 px-3" id="Nosotros">
+  <h1 class="Container_Title_subtitle d-flex justify-content-center mb-4">
+    Quienes somos
+  </h1>
+  <div class="Container_Title_text d-flex justify-content-center px-5">
+    <p>
+      Somos un grupo de desarrolladores-emprendedores que buscan dar soluciones
+      de todo tipo en cuanto a todo lo relacionado con el software
+    </p>
+  </div>
+
+  <app-personal-card
+    name="Cristian Diaz"
+    presentation="Profesional en Cine y Televisión, especializado en animación"
+    ImgPersonal="assets/images/CristianDiaz.png"
+  ></app-personal-card>
+
+  <app-personalcard-right
+    name="Victor Hugo"
+    presentation="Profesional en finanzas y comercio exterior, contaduría pública 10
+    semestres, especialista en gerencia Recursos humanos."
+    ImgPersonal="assets/images/victor.jpg"
+  >
+  </app-personalcard-right>
+
+  <app-personal-card
+    name="Josue"
+    presentation=" Ingenieria de Software y tecnico en contabildiad y finanzas."
+    ImgPersonal="assets/images/josue.jpg"
+  >
+    ></app-personal-card
+  >
+
+  <app-personalcard-right
+    name="Bresner"
+    presentation=" Técnico en producción de medios audiovisuales, ingeniería de
+    sistemas 4 semestres, estudiante de desarrollo web full stack."
+    ImgPersonal="assets/images/Bresner.png"
+  >
+    ></app-personalcard-right
+  >
+</div>
+<!-- End Quienes somos section -->
+<!-- Contactanos Section -->
+<footer class="contactanos" id="Contactanos">
+  <div class="formulario g-3 d-flex flex-column align-items-center">
+    <div class="col-auto">
+      <label for="inputPassword6" class="form-text col-form-label"
+        >Dejanos un mensaje!</label
+      >
+    </div>
+    <div class="input-container col-auto mb-4">
+      <input
+        type="text"
+        id="form-text"
+        class="input form-control"
+        aria-describedby="passwordHelpInline"
+      />
+    </div>
+
+    <button type="button" class="boton-fot btn btn-dark">Enviar</button>
+  </div>
+  <!-- Buttons -->
+
+  <app-animatedbuttons
+    ide="face"
+    IconImg="assets/images/facebook.png"
+    class="mb-4"
+  ></app-animatedbuttons>
+
+  <app-animatedbuttons
+    ide="inst"
+    IconImg="assets/images/instagram.png"
+    class="mb-4"
+  ></app-animatedbuttons>
+
+  <app-animatedbuttons
+    ide="twit"
+    IconImg="assets/images/twitter.png"
+    class="mb-4"
+  ></app-animatedbuttons>
+
+  
+</footer>

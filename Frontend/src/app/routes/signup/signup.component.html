@@ -1,0 +1,50 @@
+<!-- login.component.html -->
+<div class="sg-container">
+<div class="log-container text-white ">
+  <h1 class="log-texth">Como te quieres registrar?</h1>
+  <div class="log-options-container d-flex justify-space-around ">
+    <div class="log-left">
+      <img
+        class="log-img-left"
+        src="https://www.ceupe.com/images/easyblog_articles/3189/empresario-exitoso.jpg"
+        alt=""
+      />
+      <button
+        class="btn-log-left btn btn-dark me-4 mt-4"
+        [routerLink]="['/users-register']"
+      >
+        Contratante
+      </button>
+      <div class="capa">
+        <div class="cap-txt">
+          <h3>Contratante</h3>
+          <p>
+            ¡Encargado del estudio, evaluación y contratación de nuestros
+            diferentes desarrolladores, a la vez que en conjunto con ellos
+            mejoramos la plataforma!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="log-right">
+      <img
+        class="log-img-right"
+        src="https://www.avanzaentucarrera.com/orientacion/comp/uploads/2020/06/AETC-perspectivas-laborales-del-desarrollador-de-phyton.jpg"
+        alt=""
+      />
+      <button class="btn-log-right btn btn-dark" [routerLink]="['/devs-register']">
+        Desarrollador
+      </button>
+      <div class="capa">
+        <div class="cap-txt">
+          <h3 class="cap-tittle">Desarrollador</h3>
+          <p class="cap-text">
+            ¡Avanza en tu carrera profesional con nuevos proyectos para tus
+            clientes y avanza así en tus conocimientos y habilidades!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

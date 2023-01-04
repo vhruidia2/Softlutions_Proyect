@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "decode": "^0.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "material-icons": "^1.13.1",
+    "ngx-cookie-service": "^15.0.0"
+  }
+}

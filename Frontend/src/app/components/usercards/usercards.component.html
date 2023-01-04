@@ -1,0 +1,22 @@
+<div class="cardu m-3 " style="width: 18rem" >
+    <img src="{{ this.image }}" class="cardu-img card-img-top" alt="..." />
+    <div class="cardu-body">
+      <h5 class="cardu-title">{{ this.Nombre}} {{this.Apellido}}</h5>
+      <p class="cardu-text">
+        {{ this.queBusca }}
+      </p>
+      <p class="cardu-text">
+        {{ this.range }}
+      </p>
+      <div class="btnu-container">
+      <a [routerLink]="['/user-details']" [queryParams]="{userId:this.userId}"  class="btnu btn">{{
+        this.btnText
+      }}</a>
+    </div>
+  
+     
+  
+      <!-- <a *ngIf="condicion" (click)="this.buy()" class="btn btn-{{this.btnColor}}">{{this.btnText}}</a> -->
+    </div>
+  </div>
+  

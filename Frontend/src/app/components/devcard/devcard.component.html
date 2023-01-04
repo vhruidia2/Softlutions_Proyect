@@ -1,0 +1,20 @@
+<div class="cardd mt-3 mb-3" style="width:100%; 
+display: flex;
+height: 100%;">
+  <img src="{{ this.image }}" style="width: 50%; ;" class="cardu-img card-img-top" alt="..." />
+  <div class="cardu-body">
+    <h5 class="cardd-name">{{ this.Nombre }} {{ this.Apellido }}</h5>
+    <h1 class="cardd-title">{{ this.devType }} Developer</h1>
+    <p class="cardd-text">
+      {{ this.experience }}
+    </p>
+    <p class="cardd-tecno">{{ this.tecno }}</p>
+    <div class="btnu-container">
+      <a [routerLink]="['/dev-details']" [queryParams]="{devId:this.devId}" class="btnu btn">{{
+        this.btnText
+      }}</a>
+    </div>
+
+    <!-- <a *ngIf="condicion" (click)="this.buy()" class="btn btn-{{this.btnColor}}">{{this.btnText}}</a> -->
+  </div>
+</div>

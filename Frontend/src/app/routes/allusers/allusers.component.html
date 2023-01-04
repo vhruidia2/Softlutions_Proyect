@@ -1,0 +1,70 @@
+<div
+  class="container mt-5 d-flex justify content-evenly flex-wrap align-items-center"
+>
+<div
+style="width: 100%"
+class="d-flex justify-content-end align-items-center"
+>
+<div class="dropdown m-4">
+  <a
+    class="btn btn-secondary dropdown-toggle"
+    href="#"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Filtrar por Remuneracion
+  </a>
+
+  <ul class="dropdown-menu">
+    <li>
+      <a
+        class="dropdown-item"
+        style="cursor: pointer"
+        (click)="this. getUserBylow100()"
+        >-100$</a
+      >
+    </li>
+    <li>
+      <a
+        class="dropdown-item"
+        style="cursor: pointer"
+        (click)="this. getUserBy100Y500()"
+        >100$ - 500$</a
+      >
+    </li>
+    <li>
+      <a
+        class="dropdown-item"
+        style="cursor: pointer"
+        (click)="this. getUserBy500Y1000()"
+        >500$ - 1.000$</a
+      >
+    </li>
+    <li>
+      <a
+        class="dropdown-item"
+        style="cursor: pointer"
+        (click)="this. getUserByMore1000()"
+        >+1.000$</a
+      >
+    </li>
+  </ul>
+</div>
+<button class="btn btn-danger me-4" (click)="this.getUsers()">Quitar Filtros</button>
+</div>
+<div class="container mt-5 d-flex justify content-evenly flex-wrap align-items-center">
+  <app-usercards
+    *ngFor="let users of this.usersService.users"
+    Nombre="{{ users.firtsName }}"
+    Apellido="{{ users.lastName }}"
+    queBusca="{{ users.description }}"
+    btnColor="success"
+    btnText="Ver Detalles"
+    image="{{ users.image }}"
+    userId="{{users._id}}"
+    range="{{users.range}}"
+  >
+  </app-usercards>
+</div>
+</div>

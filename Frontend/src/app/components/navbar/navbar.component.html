@@ -1,0 +1,111 @@
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
+  <div class="container-fluid">
+    <a class="nav-text nav-link" href="#banner"
+      ><img class="imglogo" src="assets/images/softlution_1.png" alt="..."
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="items-contaier d-flex justify-content-between w-100">
+        <div class="left ms-4">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-text nav-link"
+                aria-current="page"
+                [routerLink]="['/home']"
+                >Inicio</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                *ngIf="this.usersService.isLoggedIn()"
+                class="nav-text nav-link"
+                aria-current="page"
+                [routerLink]="['/allusers']"
+                >Users</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                *ngIf="this.usersService.isLoggedIn()"
+                class="nav-text nav-link"
+                aria-current="page"
+                [routerLink]="['/alldevs']"
+                >Devs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                *ngIf="this.usersService.isAdmin()"
+                class="nav-text nav-link"
+                aria-current="page"
+                [routerLink]="['/users-list']"
+                >Lista de Usuarios</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                *ngIf="this.usersService.isAdmin()"
+                class="nav-text nav-link"
+                aria-current="page"
+                [routerLink]="['/devs-list']"
+                >Lista de Devs</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="rigth">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                *ngIf="!this.usersService.isLoggedIn()"
+                class="nav-text nav-link"
+                aria-current="page"
+                [routerLink]="['/login']"
+                >Iniciar Sesion</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                *ngIf="!this.usersService.isLoggedIn()"
+                class="nav-text nav-link"
+                aria-current="page"
+                [routerLink]="['/signup']"
+                >Registrarse</a
+              >
+            </li>
+            <li class="nav-item">
+        
+            </li>
+            <div class="dropdown nav-link"*ngIf="this.usersService.isLoggedIn()">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ this.usersService.decodeToken().firtsName + " " + this.usersService.decodeToken().lastName}}
+              </a>
+    
+              <ul class="dropdown-menu">
+                <li><a *ngIf="this.devsService.isDev()" [routerLink]="['/MyDev-details']"[queryParams]="{devId:this.devsService.decodeToken()._id}" class="dropdown-item"  >Ver Perfil</a></li>
+                <li><a *ngIf="!this.usersService.isDev()" [routerLink]="['/MyUser-details']"[queryParams]="{userId:this.usersService.decodeToken()._id}" class="dropdown-item"  >Ver Perfil</a></li>
+
+                <li><a class="dropdown-item" (click)="this.usersService.logOut()" style="cursor: pointer;">Cerrar Sesión</a></li>
+              </ul>
+            </div>
+           
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

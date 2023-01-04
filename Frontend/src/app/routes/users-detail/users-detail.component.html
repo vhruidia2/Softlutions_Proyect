@@ -1,0 +1,37 @@
+<body class="body-ud">
+<div>
+   <div class="details-header">
+   <div class="img-details-container">
+   <img class="img-details m-4"
+     src="{{ this.userService.users.data.image }}"
+     alt="..."
+     
+   />
+   <h2 class="details-name m-4">
+    {{ this.userService.users.data.firtsName }}
+    {{ this.userService.users.data.lastName }}
+    
+  </h2>
+  <h4 class="details-id me-4"> ID: {{this.userService.users.data._id}}</h4>
+ </div>
+ <div class="details-titles d-flex  mt-4">
+   <div class="details-body">
+    <div class="details-contact">
+    <h3 class="contact-tittle">Informacion De Contacto</h3>
+     <h6 class="details-email"><strong>Email :</strong> {{this.userService.users.data.email}}</h6>
+     <h6 class="details-numberphone"><strong>Numero de telefono :</strong>{{this.userService.users.data.numberPhone}}</h6>
+    </div>
+    <div class="api-info">
+      <h3 class="contact-tittle">Informacion De La Aplicacion</h3>
+     <h6 class="details-tecno"><strong>Que estoy buscando: </strong> {{this.userService.users.data.description}}</h6>
+     <h6 class="details-tecno"><strong>Cuanto estoy dispuesto a pagar :</strong> {{this.userService.users.data.range}}</h6>
+    </div>
+   </div>
+ </div>
+   </div>
+</div>
+<div class="footer-img">
+  <img class="img-fo" src="assets/images/softlution_1.png" alt="">
+</div>
+</body>
+   

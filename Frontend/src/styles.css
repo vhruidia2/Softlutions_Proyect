@@ -1,0 +1,840 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@200;300;400;500&display=swap");
+* {
+  margin: 0px;
+}
+body {
+  position: relative;
+  background-color: #2d2d2d;
+}
+img {
+  filter: grayscale(100%);
+  transition: all ease-out 500ms;
+}
+img:hover {
+  filter: grayscale(0%);
+  transition: all ease-out 500ms;
+}
+.nav-item {
+  visibility: visible;
+  transition: all ease-out 500ms;
+}
+.navbar {
+  background-color: #171717 !important;
+  color: #ffffff !important;
+  width: 100% !important;
+
+  transition: all ease-out 500ms;
+}
+.imglogo {
+  width: 10rem;
+  margin-left: 10px;
+  visibility: visible;
+  transition: all ease-out 500ms;
+}
+.imglogo:hover {
+  transform: scale(1.1);
+  transition: all ease-out 500ms;
+}
+.nav-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  transition: all ease-out 500ms;
+}
+.banner {
+  background: #2d2d2d;
+  display: flex;
+  justify-content: center;
+}
+.box1 {
+  padding-bottom: 40px;
+  color: white;
+  text-align: center;
+  font-family: Raleway;
+}
+.que-ofrecemos {
+  background-color: #171717;
+}
+.ofrecemos-tittle {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 90px;
+}
+.ofrecemos-text {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.23rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 45rem;
+}
+.card1 {
+  border-radius: 5vh;
+  border: none;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0);
+}
+.card-text {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  border-radius: 15px;
+  line-height: 30px;
+  text-align: center;
+  transition: all ease-out 500ms;
+}
+.card-text:hover {
+  transform: scale(1.1);
+  transition: all ease-out 500ms;
+}
+.text-container {
+  display: flex;
+  align-items: center;
+  transition: all ease-out 500ms;
+}
+.text-container:hover {
+  background-color: #6356ef;
+  transition: all ease-out 500ms;
+}
+
+.Container {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  background-color: #181818;
+  color: white;
+}
+.Container_Title_subtitle {
+  font-size: 90px;
+}
+.Container_Title_text {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.23rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 100%;
+}
+
+.Container_Images1 {
+  margin-left: -80px;
+  margin-left: 50px;
+  height: 25%;
+}
+.Container_Images2 {
+  margin-left: -80px;
+  margin-right: 50px;
+  height: 25%;
+}
+.card-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.card-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+.card2 {
+  background-color: transparent;
+  margin-left: -80px;
+  z-index: 1;
+  transition: all ease-out 500ms;
+}
+.card2:hover {
+  background-color: #6356ef;
+  transition: all ease-out 500ms;
+}
+.contactanos {
+  background-color: #6356ef;
+}
+.input-container {
+  width: 50%;
+}
+input {
+  height: 25vh;
+  width: 100%;
+}
+
+.boton-fot {
+  width: 90px;
+}
+.form-text {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+}
+.fot-img {
+  height: 50px;
+}
+.boton-foti {
+  margin-left: 15px;
+  transition: all ease-out 500ms;
+}
+#face:hover {
+  background-color: #1f4390;
+  z-index: -3;
+  border-radius: 31px;
+  transform: scale(1.3);
+  transition: all ease-out 500ms;
+}
+#inst:hover {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  z-index: -3;
+  border-radius: 15px;
+  transform: scale(1.3);
+  transition: all ease-out 500ms;
+}
+#twit:hover {
+  background-color: #00acee;
+  z-index: -3;
+  border-radius: 9px;
+  transform: scale(1.3);
+  transition: all ease-out 500ms;
+}
+
+/*                                                               !!!! FINAL DE LOS ESTILOS DEL HOME !!!!!                                        */
+/*                                                               !!!! ESTILOS TARGETA DE USUARIO !!!!!                                        */
+.cardu {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.415);
+  border-radius: 15px;
+  transition: ease-out 3s;
+}
+.btnu {
+  background-color: white;
+  transition: 500ms all ease-in-out;
+  margin-bottom: 8px;
+}
+.btnu:hover {
+  background-color: #6356ef;
+}
+.cardu-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+  margin: 11px;
+  text-align: start;
+}
+.cardu-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-align: justify center;
+  align-content: center;
+  margin-left: 15px;
+}
+.btnu-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+.cardu-img {
+  width: 100%;
+  border-radius: 15px 15px 15px 15px;
+}
+/*                                                               !!!! FINAL DE LOS ESTILOS DE TARGETA DE USUARIO !!!!!                                        */
+/*                                                               !!!! ESTILOS FORMULARIO DE LOGIN !!!!!                                        */
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.custom-form {
+  min-width: 300px;
+  max-width: 60%;
+  margin: 0px auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem 3rem;
+  margin: auto;
+  border-radius: 2.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 0px #7e8080, 0px 0px 15px #454343d7;
+  color: black;
+  margin-top: 10rem;
+}
+.custom-form input {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: inset -5px -5px 15px rgba(18, 17, 17, 0.496),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border: 0 none;
+  background: #ebf5fc;
+}
+.custom-form button {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border: none;
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #6356ef;
+  width: 100%;
+  display: block;
+  padding: 0.875rem 1rem;
+  border-radius: 1.5rem;
+  transition: 500ms all ease-in-out;
+  cursor: pointer;
+}
+.custom-form button:hover {
+  box-shadow: 0px 0px 1px 15px #6356ef4b;
+}
+/*                                                               !!!! FINAL DE LOS ESTILOS DE FORMULARIO DE LOGIN!!!!!                                        */
+/*                                                               !!!! ESTILOS TARGETA DE DESARROLLADOR !!!!!  */
+.cardd-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-align: end;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.cardd-tecno {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-align: end;
+  font-size: 25px;
+
+  margin-right: 10px;
+}
+.cardd-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #ffffff9c;
+  text-align: center;
+  font-size: 16px;
+  padding: 1px;
+  margin: 10px;
+}
+.cardd-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+}
+.cardd:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(196, 0, 255, 1) 100%
+  );
+  border-radius: 100px;
+  transition: all ease-out 3s;
+}
+.cardu:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(196, 0, 255, 1) 100%
+  );
+  border-radius: 50px;
+  transition: all ease-out 3s;
+  box-shadow: 0px 5px 5px 5px rgb(89, 23, 146);
+}
+
+.cardd {
+  
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.415);
+  border-radius: 15px;
+  transition: ease-out 3s;
+}
+/*                                                               !!!! FINAL DE TARGETA DE DESARROLLADOR !!!!!                                        */
+/*                                                               !!!! ESTILOS DEL LOGIN GENERAL!!!!!  */
+.log-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 100%;
+}
+.log-options-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.log-texth {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+.log-left {
+  width: 0%;
+  height: 0%;
+  transition: all ease-out 500ms;
+}
+
+.log-right {
+  width: 0%;
+  height: 0%;
+  transition: all ease-out 500ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 0rem;
+  margin-top: 3rem;
+}
+.log-right:hover {
+  width: 60%;
+  height: 100%;
+  margin-right: 0rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+
+  transition: all ease-out 500ms;
+}
+.log-left:hover {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.log-img-left {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.log-img-right {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.btn-log-left {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  border: none;
+  position: relative;
+ 
+}
+
+.btn-log-right {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  border: none;
+  position: relative;
+  
+}
+
+.btn-log-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    deeppink,
+    blue,
+    red,
+    blue,
+    deeppink,
+    blue
+  );
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.btn-log-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    deeppink,
+    blue,
+    red,
+    blue,
+    deeppink,
+    blue
+  );
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.capa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+}
+.cap-txt {
+  background-color: #8700ee9d;
+}
+.log-left:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+.log-right:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+/*                                                               !!!! ESTILOS DEL LOGIN GENERAL!!!!!  */
+/*                                                               !!!! ESTILOS DEL MY DEV DETAILS !!!!!  */
+.img-details-container{
+  width: 41%;
+  height: 100%;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313 transparent;
+  background-size: 20px 20px;
+  border-radius: 0px 11px 11px 0px; 
+  
+  
+}
+.img-details{
+  width: 300px;
+  height: 300px;
+  
+  border-radius: 150px;
+  
+}
+.details-header{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  height: 30rem;
+ 
+  
+}
+.details-body{
+  display: flex;
+  
+}
+.details-name{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color:#6356ef;
+  
+
+}
+.details-name-container{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  background-color: #6356ef;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.402);
+  
+}
+.details-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+  
+
+}
+.contact-tittle{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color:#6356ef;
+  display: flex;
+ 
+  
+  
+}
+.details-titles{
+  width: 100%;
+  height: 100%;
+  padding: 1px;
+  
+
+  
+}
+.details-id{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-cc{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-body{
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.details-age{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-email{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-password{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-numberphone{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-devtype{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-tecno{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-proyects{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.details-experience{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+
+}
+.btn-details-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.btn-details{
+  width: 10%;
+  margin-right: 30px;
+ 
+}
+
+
+
+
+
+/*                                                               !!!! FINAL ESTILOS MY DEV DETAILS!!!!!  */
+/*                                                               !!!! USER REGISTER ESTILOS!!!!!  */
+
+
+.users-register{
+  height:51rem  ;
+  width: 50rem;
+  display: flex;
+  background-color:  #953fd292;
+  border-radius: 10px;
+  margin: 30px;
+  color: rgb(0, 0, 0);
+  
+  
+}
+.devs-register{
+  height:80rem  ;
+  width: 50rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color:  #953fd292;
+  border-radius: 10px;
+  margin: 30px;
+  color: rgb(0, 0, 0);
+  
+  
+}
+.devs-register input, select{
+  width: 100% ;
+  height: 50%;
+  border:  none;
+  background-color: rgba(240, 248, 255, 0.293);
+  
+  
+}
+.form-imgd{
+  width: 50%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.users-register input, select{
+  width: 100% ;
+  height: 50%;
+  border:  none;
+  background-color: rgba(240, 248, 255, 0.293);
+  
+  
+}
+
+.users-form-container{
+  width: 50%;
+  height: 100%;
+
+ 
+ 
+
+}
+.form-img{
+  width: 50%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.users-form{
+  width: 100%;
+ 
+ 
+}
+
+.formulary-users{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  
+  
+}
+.formulary-devs{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  padding-left: 70px;
+  
+}
+/*                                                               !!!! FINAL ESTILOS USER REGISTER!!!!  */
+/*                                                               !!!! ESTILOS DE FILTROS DEVS!!!!  */
+
+.Df-tittle{
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+
+}
+
+
+
+/*                                                               !!!! FINAL ESTILOS DE FILTROS DEVS!!!!  */
+
+.body-ud{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,86,239,1) 82%, rgba(99,86,239,1) 100%);
+  height: 45rem;
+}
+.body-ud2{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,86,239,1) 82%, rgba(99,86,239,1) 100%);
+  height:115rem;
+}
+.footer-img{
+  display: flex;
+  width: 100%;
+  height: 17rem;
+ 
+  justify-content: center;
+  align-items: center;
+}
+.img-fo{
+  width: 50%;
+  height: 50%;
+}
